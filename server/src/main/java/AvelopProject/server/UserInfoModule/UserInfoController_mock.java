@@ -17,13 +17,13 @@ public class UserInfoController_mock {
     }
 
     @PostMapping("/token/{user_id}")
-    public DefaultResponse generateToken(@PathVariable String user_id) {
+    public DefaultResponse generateToken(@PathVariable("user_id") String user_id) {
         GenerateTokenRes_mock data = new GenerateTokenRes_mock();
         return new DefaultResponse(true, data);
     }
 
     @GetMapping("/{user_id}")
-    public DefaultResponse userInfo(@PathVariable String user_id) {
+    public DefaultResponse userInfo(@PathVariable("user_id") String user_id) {
         UserInfoRes_mock data = new UserInfoRes_mock();
         return new DefaultResponse(true, data);
     }

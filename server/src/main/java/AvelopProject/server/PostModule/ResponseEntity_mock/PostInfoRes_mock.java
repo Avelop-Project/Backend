@@ -66,8 +66,8 @@ public class PostInfoRes_mock {
 
         public PostInfo() {
             this.id = "post_id_1";
-            this.id = "location_1";
-            this.id = "reviews_1";
+            this.location = "location_1";
+            this.reviews = "reviews_1";
             this.food = "food_1";
             this.price = 10000;
         }
@@ -104,6 +104,22 @@ public class PostInfoRes_mock {
             this.name = "restaurant_name_1";
             this.location = "location_1";
             this.reviews = "reviews_1";
+        }
+
+        public String getId() {
+            return id;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public String getLocation() {
+            return location;
+        }
+
+        public String getReviews() {
+            return reviews;
         }
     }
 }
